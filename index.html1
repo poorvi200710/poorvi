@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie Express</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background: #ff4d4d;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .foods {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .foods h2 {
+            margin-bottom: 30px;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .food-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-card h3 {
+            margin: 15px 0;
+        }
+
+        .food-card p {
+            padding: 0 15px 15px;
+        }
+
+        .food-card button {
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .food-card button:hover {
+            background: #e60000;
+        }
+
+        .contact {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🍔 Foodie Express</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Delicious Food Delivered To Your Door</h1>
+</section>
+
+<section class="foods">
+    <h2>Our Popular Dishes</h2>
+
+    <div class="food-container">
+        
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Burger">
+            <h3>Cheese Burger</h3>
+            <p>Juicy grilled burger with fresh veggies and cheese.</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1601924582975-7d5b3b7d7c6f" alt="Pizza">
+            <h3>Italian Pizza</h3>
+            <p>Hot and cheesy pizza with fresh toppings.</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Pasta">
+            <h3>Creamy Pasta</h3>
+            <p>Rich and creamy white sauce pasta.</p>
+            <button>Order Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h3>Contact Us</h3>
+    <p>Email: foodieexpress@gmail.com</p>
+    <p>Phone: +91 98765 43210</p>
+</section>
+
+</body>
+</html>
