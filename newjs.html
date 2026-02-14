@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color & Fireworks</title>
+</head>
+<body>
+
+    <!-- Buttons -->
+    <button onclick="reset()">Reset color</button>
+    <button onclick="alert('Hello')">Click me</button>
+    <button onclick="changeRandom()">Change random color</button>
+
+    <!-- JavaScript for background color -->
+    <script>
+        function change() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function reset() {
+            document.body.style.backgroundColor = "white";
+        }
+
+        function changeRandom() {
+            const color = [
+                "red", "blue", "green", "yellow",
+                "orange", "pink", "purple",
+                "cyan", "magenta", "lime"
+            ];
+
+            let randomColor = color[Math.floor(Math.random() * color.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+    <!-- Fireworks Container -->
+    <div class="container"></div>
+
+    <!-- Fireworks Module -->
+    <script type="module">
+        import { Fireworks } from 'https://esm.run/fireworks-js';
+
+        let container = document.querySelector('.container');
+
+        let options = {
+            gravity: 1.4,
+            opacity: 0.4,
+            autoresize: true,
+            acceleration: 1.00,
+        };
+
+        let firework = new Fireworks(container, options);
+
+        firework.start();
+    </script>
+
+</body>
+</html>

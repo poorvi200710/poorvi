@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Changer</title>
+</head>
+<body>
+
+    <button onclick="reset()">Reset Color</button>
+    <button onclick="alert('Hello!')">Click me</button>
+    <button onclick="change()">Change Random Color</button>
+
+    <script>
+        function change() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function reset() {
+            document.body.style.backgroundColor = "white";
+        }
+
+        function changeRandom() {
+            const colors = ["red", "blue", "green", "yellow", "orange", "pink", "purple", "cyan"];
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
+
+<button onclick="changeRandom()">Change Random Color</button>

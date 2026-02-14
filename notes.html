@@ -1,0 +1,36 @@
+<!DOCTYPE html>     
+<html>
+<head>
+<title>Simple Animation</title>
+<style>
+  body {
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: moveBox 3s infinite alternate;
+  }
+
+  @keyframes moveBox {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<h2>HTML CSS Animation Example</h2>
+
+<div class="box"></div>
+
+</body>
+</html>
